@@ -1,0 +1,284 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background for better contrast */
+    color: #333; /* Text color */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 15%; /* Minimized width */
+    height: 100vh;
+    background: #406392;
+    color: white;
+    position: fixed;
+    padding: 15px;
+    overflow-y: auto; /* Scrollable if content overflows */
+    transition: width 0.3s ease; /* Smooth transition for resizing */
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #ecf0f1;
+    margin-bottom: 15px;
+    font-size: 18px; /* Adjust font size */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    background: #34495e;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px; /* Smaller font size */
+    transition: background 0.3s ease, font-size 0.3s ease; /* Smooth hover effect */
+}
+
+.sidebar ul li a:hover {
+    background: #1abc9c;
+    font-size: 15px; /* Slightly enlarge font on hover */
+}
+
+/* Main content styling */
+.main-content {
+    margin-left: 15%; /* Adjust for minimized sidebar */
+    padding: 20px;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for content */
+    transition: margin-left 0.3s ease; /* Smooth transition */
+}
+
+.header {
+    background: #3498db;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 4px solid #2980b9;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: white; /* Contrast against page background */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Elevation */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners work */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #4CAF50; /* Green header */
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 10px; /* Rounded header corners */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover td {
+    background-color: #e8f5e9; /* Light highlight on hover */
+    color: #333; /* Ensure text is visible */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Specific text color for water quality column */
+td.good {
+    color: green; /* Green for Good */
+    font-weight: bold;
+}
+
+td.moderate {
+    color: orange; /* Orange for Moderate */
+    font-weight: bold;
+}
+
+td.poor {
+    color: red; /* Red for Poor */
+    font-weight: bold;
+}
+
+/* Styled table with specific properties */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table thead tr {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.styled-table tbody tr td {
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #2c3e50;
+    color: #ecf0f1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Sidebar becomes a top bar */
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0; /* Remove margin for full-width content */
+    }
+
+    .sidebar ul li a {
+        font-size: 16px; /* Restore larger font size for readability */
+        padding: 10px; /* Restore padding for touch interaction */
+    }
+}
+/* Login Page Specific Styling */
+body.login-page {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #D6CFF6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body.login-page .login-container {
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(145deg, #FFFFFF 50%, #D6CFF6 50%);
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+body.login-page h2 {
+    font-size: 1.5em;
+    color: #6C63FF;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+body.login-page .input-group {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #6C63FF;
+    padding-bottom: 10px;
+}
+
+body.login-page .input-group i {
+    color: #6C63FF;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+body.login-page input[type="text"],
+body.login-page input[type="password"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #333;
+    background: none;
+}
+
+body.login-page button {
+    background-color: #6C63FF;
+    color: #FFF;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+body.login-page button:hover {
+    background-color: #5548C8;
+    transform: scale(1.05);
+}
+
+body.login-page .social-login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+body.login-page .social-login p {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+body.login-page .social-login a {
+    color: #6C63FF;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+body.login-page .social-login a:hover {
+    color: #5548C8;
+}
