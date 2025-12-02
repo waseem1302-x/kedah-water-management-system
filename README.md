@@ -1,4 +1,4 @@
-# Water Management System
+# Kedah Water Management System
 
 A **Water Management System** developed as a **group project** combining **Software Engineering (SE)** and **Database Management System (DBMS)** coursework. This project helps monitor water quality, manage resources, and report issues efficiently with a modern and responsive web interface.
 
