@@ -1,27 +1,25 @@
 # Water Management System
 
-A comprehensive **Water Management System** built as a **group project** combining **Software Engineering (SE)** and **Database Management System (DBMS)** subjects. This project helps monitor water quality, manage resources, and report issues efficiently with an intuitive web interface.
+A **Water Management System** developed as a **group project** combining **Software Engineering (SE)** and **Database Management System (DBMS)** coursework. This project helps monitor water quality, manage resources, and report issues efficiently with a modern and responsive web interface.
 
 ---
 
-## 🧑‍🤝‍🧑 Group Members
+## 👤 My Contribution
 
-| Name | Role / Contribution |
-|------|-------------------|
-| Member 1 | Full-stack / PHP & Backend |
-| Member 2 | Frontend / CSS, HTML, JS |
-| **Waseem Mushtaq** | **Database design & Frontend UI** (worked on database and UI; basic knowledge of HTML, CSS, JS; PHP part not handled) |
-| Member 4 | Backend & Integrations |
+This repository highlights my work on:
+
+- **Database Design:** Created MySQL database structure to manage water quality data, resources, and reported issues.  
+- **Frontend UI:** Designed and implemented the responsive and modern user interface using **HTML, CSS, and JavaScript**.  
+
+> Note: PHP backend logic was implemented by other team members.  
 
 ---
 
 ## 💻 Project Overview
 
-This project was developed to demonstrate integration of **database management** with **software engineering principles**:
-
-- **Frontend:** Responsive, modern, and mobile-friendly UI built with **HTML, CSS, JS**.  
-- **Backend:** PHP used for server-side functionality (handled by other team members).  
-- **Database:** MySQL database to store water quality data, resources, and reported issues.  
+- **Frontend:** Responsive, modern, and mobile-friendly UI with interactive elements.  
+- **Database:** MySQL database storing water parameters, resources, and reported issues.  
+- **Backend:** PHP used for server-side logic (handled by team).  
 
 ---
 
@@ -35,17 +33,9 @@ This project was developed to demonstrate integration of **database management**
 
 ---
 
-## 🎨 Technology Stack
-
-- **Frontend:** HTML, CSS, JavaScript  
-- **Backend:** PHP (some functionalities by team members)  
-- **Database:** MySQL  
-- **Libraries/Tools:** FontAwesome, Canvas API  
-
----
-
 ## 🚀 How to Run
 
 1. Clone the repository:  
 ```bash
 git clone https://github.com/your-username/water-management-system.git
+```
